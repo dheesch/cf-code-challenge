@@ -1,6 +1,5 @@
 module.exports = function (grunt) {
-
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks)
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -10,12 +9,12 @@ module.exports = function (grunt) {
           sourcemap: false,
           compress: false,
           yuicompress: false,
-          style: 'expanded',
+          style: 'expanded'
         },
         files: {
           'public/css/app.css': 'src/styles/scss/app.scss'
         }
-      },
+      }
     },
     cssmin: {
       options: {
@@ -45,7 +44,7 @@ module.exports = function (grunt) {
       sass: {
         dist: {
           options: {
-            style: 'expanded',
+            style: 'expanded'
           }
         },
         files: ['src/styles/scss/**/*.scss'],
@@ -55,8 +54,7 @@ module.exports = function (grunt) {
         }
       }
     }
-  });
+  })
 
-
-  grunt.registerTask('default', ['sass', 'cssmin', 'autoprefixer']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'autoprefixer'])
 }

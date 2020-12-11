@@ -1,7 +1,7 @@
 
 
 /*** Typography ***/
-$font: 
+$font: 'Montserrat', sans-serif;
 
 $display-font-size: 64px;
 $display-font-weight: 200;
@@ -38,4 +38,16 @@ $p-small-font-weight: 400;
 
 $p-smallest-font-size: 10px;
 $p-smallest-font-weight: 400;
+
+/*** Colors ***/
+$primary: #002D40;
+$secondary: #DFA928;
+$tertiary: #58585B;
+$accent: #4E9A92;
+$bg-gradient: linear-gradient(180deg, #fff, $primary);
+
+/*** Breakpoints ***/
+$bp-desktop: 1024px;
+$bp-tablet: 768px;
+$bp-phone: 500px;
 

@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  height: 400px;
+  background: $bg-gradient;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+
+  img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: $bp-tablet) {
+  .header {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: $bp-phone) {
+  .header {
+    height: 200px;
+  }
+}

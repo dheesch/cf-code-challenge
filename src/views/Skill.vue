@@ -1,8 +1,9 @@
 <template>
-  <div class="home">
+  <div>
     <Header />
-    <div class='content-container'>
-      <Search />
+    <div class="content-container">
+      <h1>{{ $route.params.id }}</h1>
+      <Search :skill="$route.params.id" />
     </div>
   </div>
 </template>
@@ -13,7 +14,7 @@ import Header from '@/components/Header.vue'
 import Search from '@/components/Search.vue'
 
 export default {
-  name: 'Home',
+  name: 'Skill',
   components: {
     Header,
     Search
